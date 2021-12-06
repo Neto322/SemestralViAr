@@ -55,15 +55,6 @@ camera.rotation.x = -0.2;
 camera.rotation.y = -0.5;
 
 
-var jsonLoader = new THREE.JSONLoader();
-jsonLoader.load("models/otro.json", addModelToScene);
-
-function addModelToScene(geometry, materials) {
-    var material = new THREE.MeshFaceMaterial(materials);
-    var object = new THREE.Mesh(geometry, material);
-    object.scale.set(10, 10, 10);
-    scene.add(object);
-}
 
 
 function onWindowResize() {
